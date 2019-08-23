@@ -34,9 +34,11 @@
             axios.get('https://jsonplaceholder.typicode.com/posts')
                 .then (function (res) {
                     self.posts = res.data;
+                    // eslint-disable-next-line no-console
                     console.log('Data: ', res.data);
                 })
                 .catch (function (error) {
+                    // eslint-disable-next-line no-console
                     console.log('Error: ', error);
                 })
         }
