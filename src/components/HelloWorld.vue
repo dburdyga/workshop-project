@@ -29,7 +29,7 @@
                 posts: []
             }
         },
-        mounted() {
+        created () {
             var self = this;
             axios.get('https://jsonplaceholder.typicode.com/posts')
                 .then (function (res) {
