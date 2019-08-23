@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img class="logo" alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Request using Axios"/>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
     color: #2c3e50;
     margin-top: 20px;
   }
-  img {
+  .logo {
     height: 125px;
   }
 </style>
