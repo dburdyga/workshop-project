@@ -17,7 +17,6 @@
 </template>
 
 <script>
-    
     export default {
         name: 'HelloWorld',
         props: {
@@ -34,7 +33,6 @@
                 .then(data => (this.posts = data));
         }
     }
-
 </script>
 
 <style scoped>
