@@ -1,10 +1,16 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-      <div>
-          <div class="post" v-for="post in posts" :key="post.id">
-              <h3>Title: {{ post.title }}</h3>
-              <p>Description: {{ post.body }}</p>
+      <h1>{{ msg }}</h1>
+      <div class="card" v-for="post in posts" :key="post.id">
+          <div class="card-content">
+              <div class="media">
+                  <div class="media-content">
+                      <p class="title is-4">Title: {{ post.title }}</p>
+                  </div>
+              </div>
+              <div class="content">
+                  <p>Description: {{ post.body }}</p>
+              </div>
           </div>
       </div>
   </div>
@@ -37,17 +43,17 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .post {
-        background: grey;
-        margin-bottom:  20px;
-        padding: 10px 20px;
-    }
-    h3 {
-        text-align: left;
-    }
     p {
         text-align: left;
+    }
+    .card {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
     }
 </style>
