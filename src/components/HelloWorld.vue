@@ -53,7 +53,9 @@
         margin-bottom: 20px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
+        color: #41b883;
+        margin-bottom: 10px;
     }
 </style>
