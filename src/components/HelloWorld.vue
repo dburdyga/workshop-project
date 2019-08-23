@@ -17,8 +17,7 @@
 </template>
 
 <script>
-    import axios from 'axios'
-
+    
     export default {
         name: 'HelloWorld',
         props: {
@@ -30,17 +29,12 @@
             }
         },
         created () {
-            var self = this;
-            axios.get('https://jsonplaceholder.typicode.com/posts')
-                .then (function (res) {
-                    self.posts = res.data;
-                    console.log('Data: ', res.data);
-                })
-                .catch (function (error) {
-                    console.log('Error: ', error);
-                })
+            fetch("https://jsonplaceholder.typicode.com/posts")
+                .then(response => response.json())
+                .then(data => (this.posts = data));
         }
     }
+
 </script>
 
 <style scoped>
