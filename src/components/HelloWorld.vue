@@ -28,8 +28,8 @@
             }
         },
         created () {
-            fetch("https://jsonplaceholder.typicode.com/posts")
-                .then(response => response.json())
+            fetch('https://jsonplaceholder.typicode.com/posts')
+                .then(res => res.json())
                 .then(data => (this.posts = data));
         }
     }
